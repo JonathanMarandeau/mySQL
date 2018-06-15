@@ -5,7 +5,7 @@ USE `webDevelopment`;
 CREATE TABLE IF NOT EXISTS `languages` (
 -- Dans laquel je définie des colonnes en leurs donnant le nom, le type et la clé
     `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `language` VARCHAR(30),
+    `language` VARCHAR(30)
 );
 -- j'affiche les tables de la base de donnée --
 SHOW TABLES;
@@ -18,7 +18,7 @@ USE `webDevelopment`;
 -- Dans la bdd je crée la table 'tools' --
 CREATE TABLE IF NOT EXISTS `tools` (
 	`id` INT AUTO_INCREMENT PRIMARY KEY,
-	`tool` VARCHAR(30),
+	`tool` VARCHAR(30)
 );
 -- j'affiche les tables de la base de donnée --
 SHOW TABLES; 
@@ -31,7 +31,7 @@ USE `webDevelopment`;
 -- Dans la bdd je crée la table 'frameworks' --
 CREATE TABLE IF NOT EXISTS `frameworks` (
 	`id` INT AUTO_INCREMENT PRIMARY KEY,
-	`name` VARCHAR(30),
+	`name` VARCHAR(30)
 );
 -- j'affiche les tables de la base de donnée --
 SHOW TABLES; 
@@ -44,7 +44,7 @@ USE `webDevelopment`;
 -- Je crée la table 'librairie' --
 CREATE TABLE IF NOT EXISTS `librairies` (
 	`id` INT AUTO_INCREMENT PRIMARY KEY,
-	`librairy` VARCHAR(50),
+	`librairy` VARCHAR(50)
 );
 -- j'affiche les tables de la base de donnée --
 SHOW TABLES;   
@@ -57,7 +57,7 @@ USE `webDevelopment`;
 -- Je crée la table 'ide' --
 CREATE TABLE IF NOT EXISTS `ide` (
 	`id` INT AUTO_INCREMENT PRIMARY KEY,
-	`ideName` VARCHAR(50),
+	`ideName` VARCHAR(50)
 );
 SHOW TABLES;   
 DESCRIBE `ide`; 
@@ -66,7 +66,7 @@ DESCRIBE `ide`;
 USE `webDevelopment`;
 CREATE TABLE IF NOT EXISTS `frameworks` (
 	`id` INT AUTO_INCREMENT PRIMARY KEY,
-	`name` VARCHAR(50),
+	`name` VARCHAR(50)
 );
 SHOW TABLES;   
 DESCRIBE `frameworks`;
@@ -97,8 +97,8 @@ USE `codex`;
 -- Je crée la table 'clients' si elle n'existe pas --
 CREATE TABLE IF NOT EXISTS `clients` (
         `id` INT AUTO_INCREMENT PRIMARY KEY,
-        `lastName` VARCHAR(30),
-	`firstName` VARCHAR(30),
+        `lastname` VARCHAR(30),
+	`firstname` VARCHAR(30),
 	`birthDate` DATE,
 	`address` VARCHAR(100),
 	`firstPhoneNumber` INT,
